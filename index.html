@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="intro text-primary py-3 fs-l text-center text-lightblue">
+            <div class="container">
+                <h1>The Master Blaster Quiz</h1>
+            </div>
+        </div>
+    <!-- ✅ ✔️ ❌ ❎ -->
+        <div class="container">
+            <h1 class="text-center mt-3 d text-primary">Your score is <span class="text-lightblue score"></span></h1>
+            <button type="reset" class="btn goto hide1 btn-center">Play again</button>
+        </div>
+    
+        <div class="py-4 quiz bg-primary">
+            <div class="container">
+                <h2 class="my-5 text-white">Here are your questions...</h2>
+    
+                <form class="quiz-form text-white">
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">1. Against which team did Sachin Tendulkar make his Test debut?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q1" value="A" class="q1">
+                            <label class="form-check-label">Australia </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q1" value="B" class="q1" required>
+                            <label class="form-check-label correct">Pakistan <span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q1" value="C" class="q1">
+                            <label class="form-check-label">West Indies </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q1" value="D" class="q1">
+                            <label class="form-check-label">England </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">2. Against which side did Tendulkar score ODI cricket's first double-century?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q2" value="A" class="q2">
+                            <label class="form-check-label">Pakistan </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q2" value="B" class="q2" required>
+                            <label class="form-check-label">Australia </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q2" value="C" class="q2">
+                            <label class="form-check-label">England </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q2" value="D" class="q2">
+                            <label class="form-check-label correct">South Africa<span class="right"> ✔️</span> </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">3. How many 50s has Sachin scored in Test Cricket?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q3" value="A" class="q3">
+                            <label class="form-check-label correct">68<span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q3" value="B" class="q3" required>
+                            <label class="form-check-label">66 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q3" value="C" class="q3">
+                            <label class="form-check-label">64 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q3" value="D" class="q3">
+                            <label class="form-check-label">62 </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">4. Which of his innings is famously known as Desert Storm?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q4" value="A" class="q4">
+                            <label class="form-check-label correct">143 vs Australia, Sharjah, 1999<span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q4" value="B" class="q4" required>
+                            <label class="form-check-label">175 vs Australia, Hyderabad, 2009 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q4" value="C" class="q4">
+                            <label class="form-check-label">98 vs Pakistan, Centurion, 2003 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q4" value="D" class="q4">
+                            <label class="form-check-label">140 vs Kenya, Bristol, 1999 </label>
+                        </div>
+                    </div>
+    
+                    
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">5. Sachin Tendulkar's best year was arguably 1998. How many centuries did Sachin score in ODIs during that year?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q5" value="A" class="q5">
+                            <label class="form-check-label">7 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q5" value="B" class="q5" required>
+                            <label class="form-check-label">8 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q5" value="C" class="q5">
+                            <label class="form-check-label correct">9<span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q5" value="D" class="q5">
+                            <label class="form-check-label">10 </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">6. Sachin dismissed one batsman eight times in international cricket. Who was that batsman?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q6" value="A" class="q6">
+                            <label class="form-check-label">Brian Lara </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q6" value="B" class="q6" required>
+                            <label class="form-check-label">Steve Waugh </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q6" value="C" class="q6">
+                            <label class="form-check-label">Ricky Ponting </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q6" value="D" class="q6">
+                            <label class="form-check-label correct">Inzamam-Ul-Haq<span class="right"> ✔️</span> </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">7. Sachin Tendulkar scored 140 in 101 balls in a 1999 world cup match against Kenya. What was so special about this innings?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q7" value="A" class="q7">
+                            <label class="form-check-label">It was Sachin's Birthday </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q7" value="B" class="q7" required>
+                            <label class="form-check-label correct">It was Sachin's first match after his Father's Death<span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q7" value="C" class="q7">
+                            <label class="form-check-label">It was Sachin's Wedding Anniversary </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q7" value="D" class="q7">
+                            <label class="form-check-label">It was Sachin's Mother's Birthday </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">8. Which of the following facts about Sachin's ODI bowling career is true?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q8" value="A" class="q8">
+                            <label class="form-check-label correct">Sachin has more ODI five-fors than Shane Warne<span class="right"> ✔️</span> </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q8" value="B" class="q8" required>
+                            <label class="form-check-label">Sachin has a better ODI bowling average than Courteney Walsh </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q8" value="C" class="q8">
+                            <label class="form-check-label">Sachin has better career ODI figures than Muttiah Murlitharan </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q8" value="D" class="q8">
+                            <label class="form-check-label">Sachin has more wickets in ODI than James Anderson </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">9. It was in 1989, India's tour of Pakistan. Abdul Qadir, Pakistan's ace spinner at that time, exchanged a few words with Sachin. Sachin replied to him by smashing him all over the park in his next over. How many runs did Sachin score in that over?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q9" value="A" class="q9">
+                            <label class="form-check-label">18 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q9" value="B" class="q9" required>
+                            <label class="form-check-label">22 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q9" value="C" class="q9">
+                            <label class="form-check-label">24 </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q9" value="D" class="q9">
+                            <label class="form-check-label correct">28<span class="right"> ✔️</span> </label>
+                        </div>
+                    </div>
+    
+                    <div class="my-3 m-t5">
+                        <p class="fs-n">10. What was notable about Sachin’s performance in the Hero Cup semi-final in 1993?</p>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q10" value="A" class="q10">
+                            <label class="form-check-label">Sachin broke the record for outfield catches in a single ODI </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q10" value="B" class="q10" required>
+                            <label class="form-check-label">Sachin was given out for 'obstructing the field' </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q10" value="C" class="q10">
+                            <label class="form-check-label">Sachin scored a 21 ball half century </label>
+                        </div>
+                        <div class="form-check my-2 mx-2">
+                            <input type="radio" name="q10" value="D" class="q10">
+                            <label class="form-check-label correct">Sachin defended 6 runs off the final over with the ball<span class="right"> ✔️</span> </label>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" class="btn">
+                    <button type="reset" class="btn reset btn-reset hide2">Reset</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
